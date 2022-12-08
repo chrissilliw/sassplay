@@ -1,0 +1,38 @@
+@mixin buttonDown(){
+    margin-bottom: 40px;
+    height: fit-content;
+    z-index: 10;
+}
+
+@mixin svgWidth(){
+    width: 40px;
+}
+
+.button_down{
+
+    width: 40px;
+    height: 40px;
+    margin-bottom: 40px;
+
+    &--white{
+        @include buttonDown();
+        align-self: flex-end;
+
+        svg{
+            @include svgWidth();
+            fill: #fff;
+        }
+    }
+
+    &--black{
+        @include buttonDown();
+        align-self: none;
+        margin-top: 20px;
+
+        svg{
+            @include svgWidth();
+            fill: #000;
+        }
+    }
+
+}

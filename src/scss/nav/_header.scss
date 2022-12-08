@@ -1,0 +1,131 @@
+@use '../base/breakpoints' as u;
+
+.header{
+    position: absolute; 
+    width: 100%;
+    height: aut o;
+    display: flex;
+    z-index: 10;
+    transition: 300ms ease;
+
+    @include u.breakpoint(medium){
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    &__navigation{
+        padding-top: 30px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        background: rgba(255, 255, 255, 0.2);
+        transition: 200ms ease;
+
+        &__items{
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            line-height: 1.15;
+
+            @include u.breakpoint(medium){
+                flex-direction: row;
+            }
+        }
+
+        &__item{
+            list-style: none;
+            text-decoration: none;
+            font-size: 22px;
+
+            :hover{
+                text-decoration: underline;
+            }
+
+            @include u.breakpoint(medium){
+                margin-right: 40px;
+
+                 &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &__item a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        @include u.breakpoint(medium){
+            padding-top: 0;
+            opacity: 1;
+            visibility: visible;
+            justify-content: end;
+            width: 95vw;
+            background: none;
+        }
+    }
+}
+
+.trigger{
+    display: none;
+
+    &:checked ~ .header__navigation{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:checked~ .hamburger .span1{
+            transform: rotate(135deg);
+            top: 9px;
+        }
+    
+    &:checked~ .hamburger .span2{
+            opacity: 0;
+        }
+
+    &:checked~ .hamburger .span3{
+            transform: rotate(-135deg);
+            top: 9px;
+        }
+}
+
+.hamburger{
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    margin-right: 25px;
+    height: 22px;
+    width: 28px;
+    z-index: 10;
+    cursor: pointer;
+
+    span{
+        position: absolute;
+        background: #fff;
+        border-radius: 4px;
+        height: 4px;
+        width: 100%;
+        transition: 300ms ease;
+    }
+
+    .span1{
+        top: 0px;
+    }
+
+    .span2{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .span3{
+        bottom: 0px;
+    }
+
+    @include u.breakpoint(medium){
+        display: none;
+    }
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/main.scss">
+</head>
+<body>
+
+    <header class="header">
+
+        <label for="trigger">
+            <input type="checkbox" class="trigger" id="trigger"> 
+            <div class="hamburger">
+                <span class="span span1"></span>
+                <span class="span span2"></span>
+                <span class="span span3"></span>
+            </div>
+
+        <nav class="header__navigation">
+
+            <ul class="header__navigation__items">
+                <li class="header__navigation__item"><a href="#">Hem</a></li>
+                <li class="header__navigation__item"><a href="#about">Om</a></li>
+                <li class="header__navigation__item"><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        </label>
+
+    </header> 
+
+    <section class="section1">
+
+        <img class="section1__imageBackground" src="assets/negative-space-black-forest-dawn.jpg" alt="" />
+
+        <div class="section1__content"> 
+
+            <h1 class="section1__content__title">Welcome to nature</h1>
+            <h4 class="section1__content__paragraph">A journey through time and sheep</h4>
+            <h4 class="section1__content__paragraph">To see how ...cotton ... is mage, made I mean...</h4>
+
+        </div>
+
+        <a class="button_down--white" href="#about">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path id="circle-down-solid" d="M256,0C114.6,0,0,114.6,0,256S114.6,512,256,512,512,397.4,512,256,397.4,0,256,0ZM244.7,395.3l-112-112A15.979,15.979,0,0,1,144,256h64V160a31.966,31.966,0,0,1,32-32h32a31.966,31.966,0,0,1,32,32v96h64a16.008,16.008,0,0,1,14.8,9.9,15.831,15.831,0,0,1-3.5,17.4l-112,112a16.055,16.055,0,0,1-22.6,0Z"/>
+            </svg> 
+        </a>
+
+    </section>
+
+    <section class="section2" id="about">
+
+        <h2 class="section2__title">Träffa laget</h2>
+
+        <div class="team-container">
+
+            <div class="team-member">
+
+                <div class="team-member__paragraph">
+                    Rakib
+                </div>
+
+                <div class="team-member__photo">
+                    <img class="member-image" src="assets/profiles/Rakib_Square.png" alt="rakib_photo">
+                </div>
+
+                <div class="team-member__info">
+                    <div class="team-member__text">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182.021 163.816">
+                            <path class="quote" d="M21.2,3A18.2,18.2,0,0,0,3,21.2V65.651a18.2,18.2,0,0,0,18.2,18.2H46.466a165.388,165.388,0,0,1-1.129,19.185,63.866,63.866,0,0,1-5.643,18.056A33.548,33.548,0,0,1,29.52,133.525q-6.2,5.078-15.8,5.078v28.213q15.808,0,27.667-6.771a60.467,60.467,0,0,0,19.749-18.056,89.552,89.552,0,0,0,11.285-26.538,140.371,140.371,0,0,0,3.386-31.6V21.2A18.2,18.2,0,0,0,57.605,3ZM130.412,3a18.2,18.2,0,0,0-18.2,18.2V65.651a18.2,18.2,0,0,0,18.2,18.2h25.264a165.391,165.391,0,0,1-1.129,19.185,63.866,63.866,0,0,1-5.643,18.056,33.548,33.548,0,0,1-10.175,12.432q-6.2,5.078-15.8,5.078v28.213q15.808,0,27.667-6.771a60.466,60.466,0,0,0,19.749-18.056,89.552,89.552,0,0,0,11.285-26.538,140.372,140.372,0,0,0,3.386-31.6V21.2A18.2,18.2,0,0,0,166.816,3Z" transform="translate(-3 -3)"/>
+                        </svg>                      
+                        Rakib är vår vassaste node-utvecklare och håller ständigt ett öga på nya tekniker
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="team-member">
+
+                <div class="team-member__paragraph">
+                    Alexandra
+                </div>
+
+                <div class="team-member__photo">
+                    <img class="member-image" src="assets/profiles/Alexandra_Square.png" alt="rakib_photo">
+                </div>
+
+                <div class="team-member__info">
+                    <div class="team-member__text">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182.021 163.816">
+                            <path class="quote" d="M21.2,3A18.2,18.2,0,0,0,3,21.2V65.651a18.2,18.2,0,0,0,18.2,18.2H46.466a165.388,165.388,0,0,1-1.129,19.185,63.866,63.866,0,0,1-5.643,18.056A33.548,33.548,0,0,1,29.52,133.525q-6.2,5.078-15.8,5.078v28.213q15.808,0,27.667-6.771a60.467,60.467,0,0,0,19.749-18.056,89.552,89.552,0,0,0,11.285-26.538,140.371,140.371,0,0,0,3.386-31.6V21.2A18.2,18.2,0,0,0,57.605,3ZM130.412,3a18.2,18.2,0,0,0-18.2,18.2V65.651a18.2,18.2,0,0,0,18.2,18.2h25.264a165.391,165.391,0,0,1-1.129,19.185,63.866,63.866,0,0,1-5.643,18.056,33.548,33.548,0,0,1-10.175,12.432q-6.2,5.078-15.8,5.078v28.213q15.808,0,27.667-6.771a60.466,60.466,0,0,0,19.749-18.056,89.552,89.552,0,0,0,11.285-26.538,140.372,140.372,0,0,0,3.386-31.6V21.2A18.2,18.2,0,0,0,166.816,3Z" transform="translate(-3 -3)"/>
+                        </svg> 
+                        Alexandra håller reda på alla överallt och ser till at det flyter
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="team-member">
+
+                <div class="team-member__paragraph">
+                    Lasse
+                </div>
+
+                <div class="team-member__photo">
+                    <img class="member-image" src="assets/profiles/NoPerson_Square.png" alt="rakib_photo">
+                </div>
+
+                <div class="team-member__info">
+                    <div class="team-member__text">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182.021 163.816">
+                            <path class="quote" d="M21.2,3A18.2,18.2,0,0,0,3,21.2V65.651a18.2,18.2,0,0,0,18.2,18.2H46.466a165.388,165.388,0,0,1-1.129,19.185,63.866,63.866,0,0,1-5.643,18.056A33.548,33.548,0,0,1,29.52,133.525q-6.2,5.078-15.8,5.078v28.213q15.808,0,27.667-6.771a60.467,60.467,0,0,0,19.749-18.056,89.552,89.552,0,0,0,11.285-26.538,140.371,140.371,0,0,0,3.386-31.6V21.2A18.2,18.2,0,0,0,57.605,3ZM130.412,3a18.2,18.2,0,0,0-18.2,18.2V65.651a18.2,18.2,0,0,0,18.2,18.2h25.264a165.391,165.391,0,0,1-1.129,19.185,63.866,63.866,0,0,1-5.643,18.056,33.548,33.548,0,0,1-10.175,12.432q-6.2,5.078-15.8,5.078v28.213q15.808,0,27.667-6.771a60.466,60.466,0,0,0,19.749-18.056,89.552,89.552,0,0,0,11.285-26.538,140.372,140.372,0,0,0,3.386-31.6V21.2A18.2,18.2,0,0,0,166.816,3Z" transform="translate(-3 -3)"/>
+                        </svg> 
+                        Gör övriga saker... mestadels
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="team-member">
+
+                <div class="team-member__paragraph">
+                    Sebastian
+                </div>
+
+                <div class="team-member__photo">
+                    <img class="member-image" src="assets/profiles/Sebastian_Square.png" alt="rakib_photo">
+                </div>
+
+                <div class="team-member__info">
+                    <div class="team-member__text">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182.021 163.816">
+                            <path class="quote" d="M21.2,3A18.2,18.2,0,0,0,3,21.2V65.651a18.2,18.2,0,0,0,18.2,18.2H46.466a165.388,165.388,0,0,1-1.129,19.185,63.866,63.866,0,0,1-5.643,18.056A33.548,33.548,0,0,1,29.52,133.525q-6.2,5.078-15.8,5.078v28.213q15.808,0,27.667-6.771a60.467,60.467,0,0,0,19.749-18.056,89.552,89.552,0,0,0,11.285-26.538,140.371,140.371,0,0,0,3.386-31.6V21.2A18.2,18.2,0,0,0,57.605,3ZM130.412,3a18.2,18.2,0,0,0-18.2,18.2V65.651a18.2,18.2,0,0,0,18.2,18.2h25.264a165.391,165.391,0,0,1-1.129,19.185,63.866,63.866,0,0,1-5.643,18.056,33.548,33.548,0,0,1-10.175,12.432q-6.2,5.078-15.8,5.078v28.213q15.808,0,27.667-6.771a60.466,60.466,0,0,0,19.749-18.056,89.552,89.552,0,0,0,11.285-26.538,140.372,140.372,0,0,0,3.386-31.6V21.2A18.2,18.2,0,0,0,166.816,3Z" transform="translate(-3 -3)"/>
+                        </svg> 
+                            En av våra utbildare som har stor erfarenhet av ganska många saker
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <a class="button_down--black" href="#contact">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path id="circle-down-solid" d="M256,0C114.6,0,0,114.6,0,256S114.6,512,256,512,512,397.4,512,256,397.4,0,256,0ZM244.7,395.3l-112-112A15.979,15.979,0,0,1,144,256h64V160a31.966,31.966,0,0,1,32-32h32a31.966,31.966,0,0,1,32,32v96h64a16.008,16.008,0,0,1,14.8,9.9,15.831,15.831,0,0,1-3.5,17.4l-112,112a16.055,16.055,0,0,1-22.6,0Z"/>
+            </svg> 
+        </a>
+
+    </section>
+
+    <footer id="contact"> 
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <ul>
+                    <li>Tegel Consulting AB</li>
+                    <li>Agatvägen 18</li>
+                    <li>168 80 Bromma</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <ul>
+                    <li>info at tegelconsulting.se</li>
+                    <li>070-123 456 78</li>
+                </ul>
+            </div>
+
+            <div class="footer-section-social">
+                <div class="footer-section-social__item">
+                    <img src="assets/icons/instagram-white.png" alt="">
+                    <p>Instagram</p>
+                </div>
+                <div class="footer-section-social__item">
+                    <img src="assets/icons/twitter-white.png" alt="">
+                    <p>Twitter</p>
+                </div>
+                <div class="footer-section-social__item">
+                    <img src="assets/icons/facebook-white.png" alt="">
+                    <p>Facebook</p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+</body> 
+</html>
